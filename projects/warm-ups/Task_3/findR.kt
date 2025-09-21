@@ -1,19 +1,20 @@
-import kotlin.random.Random
-
-fun main() {
-    val array = List(1000) { Random.nextInt(1, 10001) }
-//    for(i in 1..1000) {
-//        when(i % 10) {
-//            0 -> println(array[i - 1].toString() + " ")
-//            else -> print(array[i - 1].toString() + " ")
-//        }
-//    }
-    findR(array)
-}
+//import kotlin.collections.sorted
+//import kotlin.random.Random
+//
+//fun main() {
+//    val array = kotlin.collections.List(1000) { kotlin.random.Random.Default.nextInt(1, 10001) }
+////    for(i in 1..1000) {
+////        when(i % 10) {
+////            0 -> println(array[i - 1].toString() + " ")
+////            else -> print(array[i - 1].toString() + " ")
+////        }
+////    }
+//    findR(array)
+//}
 
 fun findR(array: List<Int>): Int {
-    val rSet = mutableSetOf<Int>()
-    val multSet = mutableSetOf<Int>()
+    val rSet = kotlin.collections.mutableSetOf<Int>()
+    val multSet = kotlin.collections.mutableSetOf<Int>()
 
     for(i in array) {
         when {
@@ -42,5 +43,5 @@ fun findR(array: List<Int>): Int {
 }
 
 fun out(r: Int, a: Int, b: Int) {
-    println("Number R is: $r\nMultipliers is: $a and $b")
+    kotlin.io.println("Number R is: $r\nMultipliers is: $a and $b")
 }
