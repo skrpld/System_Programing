@@ -1,5 +1,4 @@
 import kotlinx.coroutines.*
-import kotlinx.coroutines.launch
 
 suspend fun main() = kotlinx.coroutines.coroutineScope {
     for (i in 1..10) {
