@@ -5,7 +5,7 @@ out/
 
 ### Kotlin ###
 .kotlin
-/src/Main.kt
+!**/src/Main.kt
 
 ### Eclipse ###
 .apt_generated
